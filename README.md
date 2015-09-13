@@ -5,7 +5,7 @@
 简化代码起见，我自己写了这个小Demo来复现这个问题。
 
 简单描述下：
-Demo代码中XibTableViewCell定义了一个自定义UITableViewCell，用于XibTableViewController中。在XibTableViewCell的xib中，我增加了一个横条，设置其左边缘与右边缘都贴近边框，亦即边距为0px。采用的是右键drag拖线的方式设置autolayout约束, 左右边距的约束值实际为-8（因为我理解的默认的margin值为8）。
+Demo代码中XibTableViewCell定义了一个自定义UITableViewCell，用于XibTableViewController中。在XibTableViewCell的xib中，我增加了一个横条，设置其左边缘与右边缘都贴近边框，亦即边距为0px。采用的是右键drag拖线的方式设置autolayout约束, 左右边距的约束值实际为-8（默认的margin值为8）。
 
 横条的约束如下图所示：
 
